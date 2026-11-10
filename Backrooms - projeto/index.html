@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111310">
+  <meta name="description" content="Fuja do labirinto dos Backrooms neste jogo de navegador.">
+  <title>Backrooms: Fuga no Labirinto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="site-header">
+      <p class="eyebrow">JOGO DE SOBREVIVÊNCIA</p>
+      <h1>Backrooms</h1>
+      <p>Fuja do labirinto. Não olhe para trás.</p>
+    </header>
+    <section class="game-shell" aria-label="Jogo Backrooms">
+      <canvas id="game" width="900" height="720" aria-label="Backrooms: Fuga no Labirinto"></canvas>
+      <nav class="touch-controls" aria-label="Controles do jogo">
+        <button type="button" data-move="up" aria-label="Mover para cima">▲</button>
+        <div>
+          <button type="button" data-move="left" aria-label="Mover para a esquerda">◀</button>
+          <button type="button" data-move="down" aria-label="Mover para baixo">▼</button>
+          <button type="button" data-move="right" aria-label="Mover para a direita">▶</button>
+        </div>
+      </nav>
+    </section>
+    <p class="instructions">Use as setas ou WASD para andar. No celular, use os controles abaixo do jogo.</p>
+    <footer>Backrooms: Fuga no Labirinto</footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

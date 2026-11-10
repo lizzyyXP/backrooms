@@ -1,0 +1,113 @@
+:root {
+  color-scheme: dark;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  background: #10120f;
+  color: #e8e4d1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 50% 35%, rgba(86, 93, 52, 0.16), transparent 58%),
+    #10120f;
+}
+
+.page {
+  width: min(100% - 28px, 980px);
+  margin: 0 auto;
+  padding: 28px 0 20px;
+  text-align: center;
+}
+
+.site-header {
+  margin-bottom: 20px;
+}
+
+.site-header h1 {
+  margin: 3px 0;
+  color: #e8d679;
+  font-size: clamp(2rem, 7vw, 3.2rem);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.site-header p {
+  margin: 6px 0;
+  color: #b6b79c;
+}
+
+.site-header .eyebrow {
+  color: #a4a982;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+}
+
+.game-shell {
+  overflow: hidden;
+  border: 1px solid #59613a;
+  border-radius: 8px;
+  background: #181b17;
+  box-shadow: 0 18px 70px #0009;
+}
+
+#game {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 4;
+  background: #101210;
+  image-rendering: pixelated;
+  touch-action: manipulation;
+}
+
+.instructions {
+  margin: 14px 0;
+  color: #b6b79c;
+  font-size: 0.95rem;
+}
+
+.touch-controls {
+  display: none;
+  padding: 8px 0 14px;
+}
+
+.touch-controls div {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.touch-controls button {
+  width: 54px;
+  height: 48px;
+  margin: 4px;
+  border: 1px solid #777d4e;
+  border-radius: 8px;
+  background: #272c21;
+  color: #f0e2a2;
+  font-size: 1.15rem;
+  touch-action: none;
+}
+
+.touch-controls button:active {
+  background: #515735;
+}
+
+footer {
+  padding: 10px;
+  color: #777b69;
+  font-size: 0.8rem;
+}
+
+@media (pointer: coarse) {
+  .touch-controls {
+    display: block;
+  }
+}
